@@ -1,0 +1,40 @@
+<ion-content class="padding first-page">
+  <div class="content">
+    <img src="img/logo-ubuntu.png" width="150" class="logo">
+    <div class="list">
+
+      <div class="login-buttons">
+        <label class="item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input type="text" placeholder="Email">
+        </label>
+        <label class="item-input item-floating-label">
+          <span class="input-label">Senha</span>
+          <input type="password" placeholder="Senha">
+        </label>
+      </div>
+
+      <div class="text-center options-login">
+        <button class="button button-outline button-dark">
+          Login
+        </button>
+        <button class="button button-outline button-dark">
+          Cadastrar
+        </button>
+      </div>
+
+      <button class="facebook-sign-in button button-block button-positive" ng-click="facebookSignIn()">
+        <div class="text-left"><i class="ion-social-facebook icon-large"></i></div>
+        <div class="text-center same-line">Login with <span>facebook</span></div>
+      </button>
+      <button class="google-sign-in button button-block button-assertive" ng-click="">
+        <div class="text-left"><i class="ion-social-googleplus icon-large"></i></div>
+        <div class="text-center same-line">Login with Google+</div>
+      </button>
+      <button class="button button-clear button-block button-light">
+        Esqueceu a senha?
+      </button>
+
+    </div>
+  </div>
+</ion-content>

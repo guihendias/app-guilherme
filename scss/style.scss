@@ -1,0 +1,42 @@
+.first-page {
+  background: linear-gradient(to right, #FF0000 0%, #F78000 100%);
+  .content{
+    margin-top: 30px;
+  }
+  .login-buttons {
+    margin-bottom: 20px;
+    input {
+      color: #FFFFFF;
+      border-bottom: 1px solid white;
+    }
+  }
+  .options-login {
+    margin: auto 0 20px 0;
+  }
+  .facebook-sign-in {
+    background-color: #45619C;
+    color: white;
+    span {
+      font-family: 'Tahoma';
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .google-sign-in {
+    background-color: #DE4933;
+    color: white;
+  }
+  .logo {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icon-large {
+  font-size: 28px;
+}
+
+.same-line {
+  margin-top: -45px;
+}

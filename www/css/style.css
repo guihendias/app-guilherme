@@ -1,5 +1,8 @@
 .first-page {
-  background: linear-gradient(to right, #ff7b0d 0%, #ffa84c 100%); }
+  background-color: black;
+  background-image: url("/img/giphy.gif");
+  background-size: 100%;
+  background-repeat: no-repeat; }
   .first-page .content {
     margin-top: 30px; }
   .first-page .login-buttons {
@@ -29,14 +32,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  .first-page .cadastrar {
-    width: 55%; }
 
 .icon-large {
   font-size: 28px; }
 
 .same-line {
-  margin-top: -45px; }
+  margin-top: -40px; }
 
-ion-nav-bar {
-  background-color: black; }
+.bar-custom {
+  background-color: #ffa84c; }

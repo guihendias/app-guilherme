@@ -87,7 +87,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
   
   .state('sign-up',{
     url: '/sign-up',
-    templateUrl: 'templates/sign-up.html'
+    templateUrl: 'templates/sign-up.html',
+    controller: 'SignUpCtrl'
   })
   
    .state('home', {

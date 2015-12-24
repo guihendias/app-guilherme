@@ -6,35 +6,36 @@
       <div class="login-buttons">
         <label class="item-input item-floating-label">
           <span class="input-label">Email</span>
-          <input type="text" placeholder="Email">
+          <input type="email" placeholder="Email">
         </label>
         <label class="item-input item-floating-label">
           <span class="input-label">Senha</span>
           <input type="password" placeholder="Senha">
         </label>
-      </div>
-
-      <div class="text-center options-login">
-        <button class="button button-outline button-dark">
-          Login
-        </button>
-        <button class="button button-outline button-dark">
-          Cadastrar
+        <div class="text-center">
+        <button class="button button-outline button-block button-dark">
+          Login <i class="ion-log-in"></i>
         </button>
       </div>
+      </div>
 
-      <button class="facebook-sign-in button button-block button-positive" ng-click="facebookSignIn()">
+      
+
+      <button class="facebook-sign-in button button-block" ng-click="facebookSignIn()">
         <div class="text-left"><i class="ion-social-facebook icon-large"></i></div>
-        <div class="text-center same-line">Login with <span>facebook</span></div>
+        <div class="text-center same-line">Login com <span>facebook</span></div>
       </button>
-      <button class="google-sign-in button button-block button-assertive" ng-click="">
+      <button class="google-sign-in button button-block" ng-click="">
         <div class="text-left"><i class="ion-social-googleplus icon-large"></i></div>
-        <div class="text-center same-line">Login with Google+</div>
+        <div class="text-center same-line">Login com <span>Google+</span></div>
       </button>
-      <button class="button button-clear button-block button-light">
+      <button class="button button-clear button-light">
         Esqueceu a senha?
       </button>
-
+      <button class="button button-clear button-dark cadastrar" ui-sref="sign-up">
+        <div class="text-right">Cadastrar</div>
+      </button>
     </div>
   </div>
+  
 </ion-content>

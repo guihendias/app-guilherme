@@ -1,5 +1,5 @@
 .first-page {
-  background: linear-gradient(to right, #FF0000 0%, #F78000 100%); }
+  background: linear-gradient(to right, #ff7b0d 0%, #ffa84c 100%); }
   .first-page .content {
     margin-top: 30px; }
   .first-page .login-buttons {
@@ -7,25 +7,36 @@
     .first-page .login-buttons input {
       color: #FFFFFF;
       border-bottom: 1px solid white; }
-  .first-page .options-login {
-    margin: auto 0 20px 0; }
   .first-page .facebook-sign-in {
-    background-color: #45619C;
+    background-color: #3b5998;
     color: white; }
     .first-page .facebook-sign-in span {
       font-family: 'Tahoma';
       font-weight: bold;
       font-size: 18px; }
+    .first-page .facebook-sign-in:active {
+      background-color: #1e2e4f; }
   .first-page .google-sign-in {
-    background-color: #DE4933;
+    background-color: #dd4b39;
     color: white; }
+    .first-page .google-sign-in span {
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 18px; }
+    .first-page .google-sign-in:active {
+      background-color: #96271a; }
   .first-page .logo {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+  .first-page .cadastrar {
+    width: 55%; }
 
 .icon-large {
   font-size: 28px; }
 
 .same-line {
   margin-top: -45px; }
+
+ion-nav-bar {
+  background-color: black; }

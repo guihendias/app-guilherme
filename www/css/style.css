@@ -41,3 +41,31 @@
 
 .bar-custom {
   background-color: #ffa84c; }
+
+.popup-container .popup {
+  padding-top: 5px;
+  padding-left: 10px;
+  background: #fafafa;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3); }
+  .popup-container .popup .popup-head {
+    text-align: left;
+    border: none; }
+    .popup-container .popup .popup-head h3 {
+      color: #000;
+      font-size: 20px; }
+  .popup-container .popup .popup-body {
+    font-size: 17px;
+    color: #737373; }
+  .popup-container .popup .popup-buttons {
+    text-align: right;
+    display: block; }
+    .popup-container .popup .popup-buttons .button {
+      width: auto;
+      display: inline-block;
+      -webkit-box-flex: none;
+      flex: none;
+      color: #2196f3;
+      background: transparent;
+      text-transform: uppercase;
+      font-weight: 500; }

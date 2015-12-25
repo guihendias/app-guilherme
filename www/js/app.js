@@ -95,6 +95,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     url: '/home',
     templateUrl: 'templates/home.html',
     controller: 'HomeCtrl'
+  })
+  
+   .state('config-profile', {
+    url: '/config/profile',
+    templateUrl: 'templates/config-profile.html'
   });
 
   // if none of the above states are matched, use this as the fallback

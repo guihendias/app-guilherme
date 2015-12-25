@@ -1,9 +1,10 @@
 $main-gradient: linear-gradient(to right, #ff7b0d 0%, #ffa84c 100%);
 .first-page {
-  background-color: black;
-  background-image: url('/img/giphy.gif');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: url('../img/giphy.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   .content {
     margin-top: 30px;
   }
@@ -50,55 +51,46 @@ $main-gradient: linear-gradient(to right, #ff7b0d 0%, #ffa84c 100%);
 }
 
 .same-line {
-  margin-top: -40px;
+  margin-top: -50px;
 }
 
 .bar-custom {
   background-color: #ffa84c;
 }
 
-$buttonsColor : #2196f3;
-.popup-container{
-
-	.popup{
-		padding-top: 5px;
-		padding-left: 10px;
-		background: #fafafa;
-		-webkit-box-shadow: 0 10px 30px 0 rgba(0,0,0,.3);
-		box-shadow: 0 10px 30px 0 rgba(0,0,0,.3);
-		
-		.popup-head{
-			text-align: left;
-			border: none;
-
-			h3{
-				color: #000;
-				font-size: 20px;
-			}
-
-		}
-		.popup-body{
-			font-size: 17px;
-			color: #737373;
-		}
-
-		.popup-buttons{
-			text-align: right;
-			display: block;
-
-			.button{
-				width: auto;
-				display: inline-block;
-				-webkit-box-flex: none;
-				flex: none;
-				color: $buttonsColor;
-				background: transparent;
-				text-transform: uppercase;
-				font-weight: 500;
-			}
-
-		}
-
-	}
-
+$buttonsColor: #2196f3;
+.popup-container {
+  .popup {
+    padding-top: 5px;
+    padding-left: 10px;
+    background: #fafafa;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .3);
+    .popup-head {
+      text-align: left;
+      border: none;
+      h3 {
+        color: #000;
+        font-size: 20px;
+      }
+    }
+    .popup-body {
+      font-size: 17px;
+      color: #737373;
+    }
+    .popup-buttons {
+      text-align: right;
+      display: block;
+      .button {
+        width: auto;
+        display: inline-block;
+        -webkit-box-flex: none;
+        flex: none;
+        color: $buttonsColor;
+        background: transparent;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
 }

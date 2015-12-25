@@ -1,8 +1,9 @@
 .first-page {
-  background-color: black;
-  background-image: url("/img/giphy.gif");
-  background-size: 100%;
-  background-repeat: no-repeat; }
+  background: url("../img/giphy.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   .first-page .content {
     margin-top: 30px; }
   .first-page .login-buttons {
@@ -37,7 +38,7 @@
   font-size: 28px; }
 
 .same-line {
-  margin-top: -40px; }
+  margin-top: -50px; }
 
 .bar-custom {
   background-color: #ffa84c; }

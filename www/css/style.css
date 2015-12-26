@@ -1,9 +1,47 @@
-.first-page {
+.welcome {
   background: url("../img/giphy.gif") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.facebook-sign-in {
+  background-color: #3b5998;
+  color: white; }
+  .facebook-sign-in span {
+    font-family: 'Tahoma';
+    font-weight: bold;
+    font-size: 18px; }
+  .facebook-sign-in:active {
+    background-color: #1e2e4f; }
+
+.google-sign-in {
+  background-color: #dd4b39;
+  color: white; }
+  .google-sign-in span {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 18px; }
+  .google-sign-in:active {
+    background-color: #96271a; }
+
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.first-page {
+  background: linear-gradient(to right, #ff7b0d 0%, #ffa84c 100%); }
+  .first-page ::-webkit-input-placeholder {
+    color: #222222; }
+  .first-page :-moz-placeholder {
+    /* Firefox 18- */
+    color: #222222; }
+  .first-page ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #222222; }
+  .first-page :-ms-input-placeholder {
+    color: #222222; }
   .first-page .content {
     margin-top: 30px; }
   .first-page .login-buttons {
@@ -11,28 +49,6 @@
     .first-page .login-buttons input {
       color: #FFFFFF;
       border-bottom: 1px solid white; }
-  .first-page .facebook-sign-in {
-    background-color: #3b5998;
-    color: white; }
-    .first-page .facebook-sign-in span {
-      font-family: 'Tahoma';
-      font-weight: bold;
-      font-size: 18px; }
-    .first-page .facebook-sign-in:active {
-      background-color: #1e2e4f; }
-  .first-page .google-sign-in {
-    background-color: #dd4b39;
-    color: white; }
-    .first-page .google-sign-in span {
-      font-family: 'Roboto';
-      font-weight: bold;
-      font-size: 18px; }
-    .first-page .google-sign-in:active {
-      background-color: #96271a; }
-  .first-page .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
 
 .icon-large {
   font-size: 28px; }

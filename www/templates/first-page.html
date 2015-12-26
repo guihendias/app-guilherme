@@ -1,6 +1,6 @@
 <ion-content class="padding first-page">
   <div class="content">
-    <img src="img/logo-ubuntu.png" width="150" class="logo">
+    <img src="img/logo-ubuntu.png" width="150" class="image-center">
     <div class="list">
 
       <div class="login-buttons">
@@ -9,7 +9,7 @@
           <input type="email" placeholder="Email">
         </label>
         <label class="item-input item-floating-label item-icon-right">
-          <span class="input-label">Senha</span> <i class="icon ion-eye placeholder-icon" on-touch="showPassword = true" on-release="showPassword=false" ng-init="showPassword=false"></i>
+          <span class="input-label">Senha</span> <i class="icon ion-eye placeholder-icon dark" on-touch="showPassword = true" on-release="showPassword=false" ng-init="showPassword=false" style="margin-top:10px;"></i>
           <input type="{{showPassword ? 'text' : 'password'}}" placeholder="Senha">
         </label>
         <div class="text-center">

@@ -79,10 +79,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     }
   })
 
-  .state('welcome', {
-    url: '/welcome',
+  .state('first-page', {
+    url: '/first-page',
     templateUrl: 'templates/first-page.html',
     controller: 'WelcomeCtrl'
+  })
+  
+  .state('welcome',{
+    url: '/welcome',
+    templateUrl: 'templates/welcome.html'
   })
   
   .state('sign-up',{

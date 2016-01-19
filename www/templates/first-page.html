@@ -1,40 +1,47 @@
 <ion-content class="padding first-page">
   <div class="content">
-    <img src="img/logo-ubuntu.png" width="150" class="logo">
+    <img src="img/logo-ubuntu.png" width="150" class="image-center">
     <div class="list">
 
       <div class="login-buttons">
         <label class="item-input item-floating-label">
           <span class="input-label">Email</span>
-          <input type="text" placeholder="Email">
+          <input type="email" placeholder="Email">
         </label>
-        <label class="item-input item-floating-label">
-          <span class="input-label">Senha</span>
-          <input type="password" placeholder="Senha">
+        <label class="item-input item-floating-label item-icon-right">
+          <span class="input-label">Senha</span> <i class="icon ion-eye placeholder-icon dark" on-touch="showPassword = true" on-release="showPassword=false" ng-init="showPassword=false" style="margin-top:10px;"></i>
+          <input type="{{showPassword ? 'text' : 'password'}}" placeholder="Senha">
         </label>
+        <div class="text-center">
+          <button class="button button-outline button-block button-dark">
+            Login <i class="ion-log-in"></i>
+          </button>
+        </div>
       </div>
 
-      <div class="text-center options-login">
-        <button class="button button-outline button-dark">
-          Login
-        </button>
-        <button class="button button-outline button-dark">
-          Cadastrar
-        </button>
-      </div>
 
-      <button class="facebook-sign-in button button-block button-positive" ng-click="facebookSignIn()">
+
+      <button class="facebook-sign-in button button-block" ng-click="facebookSignIn()">
         <div class="text-left"><i class="ion-social-facebook icon-large"></i></div>
-        <div class="text-center same-line">Login with <span>facebook</span></div>
+        <div class="text-center same-line">Login com <span>facebook</span></div>
       </button>
-      <button class="google-sign-in button button-block button-assertive" ng-click="">
+      <button class="google-sign-in button button-block" ng-click="">
         <div class="text-left"><i class="ion-social-googleplus icon-large"></i></div>
-        <div class="text-center same-line">Login with Google+</div>
+        <div class="text-center same-line">Login com <span>Google+</span></div>
       </button>
-      <button class="button button-clear button-block button-light">
-        Esqueceu a senha?
-      </button>
-
+      <div class="row">
+        <div class="col col-30 text-left">
+          <button class="button button-clear button-light">
+            Esqueceu a senha?
+          </button>
+        </div>
+        <div class="col col-70 text-right">
+          <button class="button button-clear button-light" ui-sref="sign-up">
+            Cadastrar
+          </button>
+        </div>
+      </div>
     </div>
   </div>
+
 </ion-content>

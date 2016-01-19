@@ -1,41 +1,47 @@
-<ion-content class="padding">
+<ion-content>
   <div class="item item-avatar">
     <img src="{{user.picture}}">
     <h2>{{user.name}}</h2>
-    <p>alguma informação</p>
+    <p>Nenhuma compra realizada</p>
   </div>
   <div>
+
+    <div class="list">
+
+      <a class="item item-icon-left" href="#/config/profile">
+        <i class="icon ion-person"></i> Configurações de perfil
+      </a>
+
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-card"></i> Configurações de compras
+      </a>
+
+      <a class="item item-icon-left" href="#/config/notifications">
+        <i class="icon ion-android-notifications"></i> Notificações
+      </a>
+
+      <a class="item item-icon-left" href="#/config/conquistas">
+        <i class="icon ion-trophy"></i> Conquistas
+        <span class="badge badge-balanced"> 
+        0
+    </span>
+      </a>
+
+      <a class="item item-icon-left" href="#/config/friends">
+        <i class="icon ion-person-stalker"></i> Amigos
+        <span class="item-note">27</span>
+      </a>
+
+      <a class="item item-icon-left" href="#/report-problem">
+        <i class="icon ion-alert-circled"></i> Relatar um problema
+      </a>
+
+      <a class="item item-icon-left" href="#/about">
+        <i class="icon ion-information-circled"></i> Sobre
+      </a>
+    </div>
     
-    <ul class="list">
-      <li class="item item-toggle">
-        Receber notificações
-        <label class="toggle toggle-positive">
-          <input type="checkbox">
-          <div class="track">
-            <div class="handle"></div>
-          </div>
-        </label>
-      </li>
-      <li class="item item-toggle">
-        Receber notificações
-        <label class="toggle toggle-calm">
-          <input type="checkbox">
-          <div class="track">
-            <div class="handle"></div>
-          </div>
-        </label>
-      </li>
-      <li class="item item-toggle">
-        Receber notificações
-        <label class="toggle toggle-balanced">
-          <input type="checkbox">
-          <div class="track">
-            <div class="handle"></div>
-          </div>
-        </label>
-      </li>
-    </ul>
-    
-  </div>
-  <a class="button button-assertive button-block button-outline" ng-click="showLogOutMenu()">Log Out</a>
+    <div class="padding">
+      <a class="button button-assertive button-block button-outline" ng-click="showLogOutMenu()">Sair</a>
+    </div>
 </ion-content>

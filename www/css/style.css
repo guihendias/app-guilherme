@@ -1,5 +1,47 @@
+.welcome {
+  background: url("../img/giphy.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.facebook-sign-in {
+  background-color: #3b5998;
+  color: white; }
+  .facebook-sign-in span {
+    font-family: 'Tahoma';
+    font-weight: bold;
+    font-size: 18px; }
+  .facebook-sign-in:active {
+    background-color: #1e2e4f; }
+
+.google-sign-in {
+  background-color: #dd4b39;
+  color: white; }
+  .google-sign-in span {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 18px; }
+  .google-sign-in:active {
+    background-color: #96271a; }
+
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .first-page {
-  background: linear-gradient(to right, #FF0000 0%, #F78000 100%); }
+  background: linear-gradient(to right, #ff7b0d 0%, #ffa84c 100%); }
+  .first-page ::-webkit-input-placeholder {
+    color: #222222; }
+  .first-page :-moz-placeholder {
+    /* Firefox 18- */
+    color: #222222; }
+  .first-page ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #222222; }
+  .first-page :-ms-input-placeholder {
+    color: #222222; }
   .first-page .content {
     margin-top: 30px; }
   .first-page .login-buttons {
@@ -7,25 +49,61 @@
     .first-page .login-buttons input {
       color: #FFFFFF;
       border-bottom: 1px solid white; }
-  .first-page .options-login {
-    margin: auto 0 20px 0; }
-  .first-page .facebook-sign-in {
-    background-color: #45619C;
-    color: white; }
-    .first-page .facebook-sign-in span {
-      font-family: 'Tahoma';
-      font-weight: bold;
-      font-size: 18px; }
-  .first-page .google-sign-in {
-    background-color: #DE4933;
-    color: white; }
-  .first-page .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
 
 .icon-large {
   font-size: 28px; }
 
 .same-line {
-  margin-top: -45px; }
+  margin-top: -50px; }
+
+.bar-custom {
+  background-color: #ffa84c; }
+
+.popup-container .popup {
+  padding-top: 5px;
+  padding-left: 10px;
+  background: #fafafa;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3); }
+  .popup-container .popup .popup-head {
+    text-align: left;
+    border: none; }
+    .popup-container .popup .popup-head h3 {
+      color: #000;
+      font-size: 20px; }
+  .popup-container .popup .popup-body {
+    font-size: 17px;
+    color: #737373; }
+  .popup-container .popup .popup-buttons {
+    text-align: right;
+    display: block; }
+    .popup-container .popup .popup-buttons .button {
+      width: auto;
+      display: inline-block;
+      -webkit-box-flex: none;
+      flex: none;
+      color: #2196f3;
+      background: transparent;
+      text-transform: uppercase;
+      font-weight: 500; }
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+textarea{
+  resize: none;
+}
+.big-icon {
+  font-size: 28px; }
+
+.green-icon {
+  color: green; }

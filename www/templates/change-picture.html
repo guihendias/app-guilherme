@@ -1,0 +1,35 @@
+<ion-view view-title="Alterar foto de perfil">
+  <div class="bar bar-header bar-custom">
+    <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goBack()"></button>
+    <h1 class="title"><img class="title-image" src="http://www.ionicframework.com/img/ionic-logo-white.svg" width="123" height="43" /></h1>
+  </div>
+  <ion-content scroll="false">
+
+    <div class="list card" style="margin-top:50px;">
+
+      <div class="item item-divider">
+        Selecione
+      </div>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-social-facebook"></i> Escolher do facebook
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-social-instagram"></i> Escolher no instagram
+      </a>
+
+      <a ng-click="getFromGallery()" class="item item-icon-left">
+        <i class="icon ion-images"></i> Escolher na galeria
+      </a>
+
+      <a ng-click="takePicture()" class="item item-icon-left">
+        <i class="icon ion-camera"></i> Tirar uma foto
+      </a>
+
+    </div>
+
+    <h6 class="text-center">Por favor, respeite <a href="#">nossos termos</a> ao escolher uma foto</h6>
+
+  </ion-content>
+</ion-view>

@@ -19,7 +19,7 @@ app.controller('WelcomeCtrl', function($scope, $state, $q, UserService, $ionicLo
         picture : "http://graph.facebook.com/" + authResponse.userID + "/picture?type=large"
       });
       $ionicLoading.hide();
-      $state.go('home');
+      $state.go('config');
     }, function(fail){
       // Fail get profile info
       console.log('profile info fail', fail);
@@ -73,13 +73,13 @@ app.controller('WelcomeCtrl', function($scope, $state, $q, UserService, $ionicLo
 							picture : "http://graph.facebook.com/" + success.authResponse.userID + "/picture?type=large"
 						});
 
-						$state.go('home');
+						$state.go('config');
 					}, function(fail){
 						// Fail get profile info
 						console.log('profile info fail', fail);
 					});
 				}else{
-					$state.go('home');
+					$state.go('config');
 				}
       } else {
         // If (success.status === 'not_authorized') the user is logged in to Facebook,

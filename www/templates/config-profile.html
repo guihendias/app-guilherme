@@ -1,0 +1,60 @@
+<ion-view view-title="Configurações de perfil">
+  <div class="bar bar-header bar-custom">
+    <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goBack()"></button>
+    <h1 class="title"><img class="title-image" src="http://www.ionicframework.com/img/ionic-logo-white.svg" width="123" height="43" /></h1>
+  </div>
+  <ion-content>
+    <div class="item item-avatar" style="margin-top:40px;" ui-sref="change-picture">
+      <img src="{{user.picture}}">
+      <p>Trocar foto de perfil</p>
+    </div>
+
+    <div class="list">
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Nome</span>
+        <input type="text" ng-model="user.name">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="user.email">
+      </label>
+      <label class="item">
+        Reputação <i class="icon balanced ion-star"></i> <span class="item-note">0 votos</span>
+      </label>
+    
+      <ul>
+        <li class="item item-toggle">
+          Perfil público
+          <label class="toggle toggle-assertive">
+            <input type="checkbox">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+          </label>
+        </li>
+      </ul>
+      
+      <div class="padding">
+        <h5>Social</h5>
+        <div class="item-icon">
+          <img src="img/insta-icon.png" width="50px" height="50px"> <a class="item-note balanced">Sincronizar</a>
+        </div>
+        <hr>
+        <div class=" item-icon">
+          <img src="img/fb-icon.png" width="50px" height="50px"><a class="item-note">Sincronizado</a>
+        </div>
+        <hr>
+        <div class=" item-icon">
+          <img src="img/twitter-icon.png" width="50px" height="50px"> <a class="item-note balanced">Sincronizar</a>
+        </div>
+        <div class="row">
+          <button class="button button-clear button-assertive">Alterar a senha</button>
+        </div>
+        <div class="row">
+          <button class="button button-clear button-assertive">Apagar minha conta </button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view view-title="Configurações de perfil">
+  <div class="bar bar-header bar-custom">
+    <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goBack()"></button>
+    <h1 class="title"><img class="title-image" src="http://www.ionicframework.com/img/ionic-logo-white.svg" width="123" height="43" /></h1>
+  </div>
+  <ion-content class="padding" style="margin-top:45px">
+
+    <img src="img/Jackie-Chan-WTF.jpg" width="100%">
+
+    <label class="item item-input">
+      <input type="text" ng-model="subject" placeholder="Assunto...">
+      </ion-input>
+    </label>
+
+    <div class="row"></div>
+    <label class="item item-input">
+      <textarea cols="50" rows="10" placeholder="Por favor, descreva o problema e quais passos devemos tomar para reproduzi-lo..." ng-model="problem"></textarea>
+    </label>
+    <div class="row">
+      <button class="button button-outline button-block button-balanced" ng-click="report(subject,problem)">Enviar</button>
+    </div>
+  </ion-content>
+</ion-view>

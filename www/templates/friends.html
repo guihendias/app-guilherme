@@ -1,0 +1,22 @@
+<ion-view view-title="Friends">
+  <div class="bar bar-header bar-custom">
+    <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goBack()"></button>
+    <h1 class="title"><img class="title-image" src="http://www.ionicframework.com/img/ionic-logo-white.svg" width="123" height="43" /></h1>
+  </div>
+  <ion-content class="padding" style="margin-top:45px">
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" placeholder="Pesquisar" ng-model="searchText">
+    </label>
+    <ion-list>
+      <ion-item ng-repeat="contact in contacts | orderBy:'displayName' | filter:searchText" ng-show="contact.displayName != null && contact.phoneNumbers != null">
+        <div class="item-button-right">
+          {{contact.displayName}}
+          <button class="button button-positive" ng-click="sendSMS({{contact.phoneNumbers.value}})">
+            <i class="icon ion-plus-circled"></i>
+          </button>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
